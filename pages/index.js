@@ -13,7 +13,7 @@ const Home = ({ products, bannerData }) => {
 
       <div className="products-heading">
         <h2>Productos mas vendidos</h2>
-        <p>Moviles de muchas variedades</p>
+        <p>Gran variedad de productos</p>
       </div>
 
       <div className="products-container">
