@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
 
+import { BsCurrencyEuro } from 'react-icons/bs';
+
 import { client, urlFor } from '../../lib/client';
 import { Product } from '../../components';
 import { useStateContext } from '../../context/StateContext';
@@ -53,7 +55,7 @@ const ProductDetails = ({ product, products }) => {
                     </div>
                     <h4>Detalles: </h4>
                     <p>{details}</p>
-                    <p className="price">${price}</p>
+                    <p className="price">{price}<BsCurrencyEuro className="icon-refact"/></p>
                     <div className="quantity">
                         <h3>Cantidad:</h3>
                         <p className="quantity-desc">
