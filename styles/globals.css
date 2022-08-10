@@ -383,6 +383,9 @@ padding: 20px 10px;
   background: transparent;
   border: none;
 }
+.paypal-item{
+  color: rgb(60, 60, 230);
+}
 .cart-bottom{
   position: absolute;
   bottom: 12px;
@@ -433,12 +436,6 @@ padding: 30px 65px;
 }
 .btn-grey:hover{
   transform: scale(1.1,1.1);
-}
-
-.icon-refact{
-  margin-top: 5px;
-  font-size: 15px;
-  
 }
 
 .product-detail-container{

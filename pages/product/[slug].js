@@ -55,7 +55,7 @@ const ProductDetails = ({ product, products }) => {
                     </div>
                     <h4>Detalles: </h4>
                     <p>{details}</p>
-                    <p className="price">{price}<BsCurrencyEuro className="icon-refact"/></p>
+                    <p className="price">{price}<BsCurrencyEuro size={15}/></p>
                     <div className="quantity">
                         <h3>Cantidad:</h3>
                         <p className="quantity-desc">

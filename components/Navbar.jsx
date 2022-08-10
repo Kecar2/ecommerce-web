@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { AiOutlineShopping } from 'react-icons/ai';
 import { GiTechnoHeart } from 'react-icons/gi';
+import {RiShoppingBag2Line} from 'react-icons/ri';
 
 import { Cart } from './';
 import { useStateContext } from '../context/StateContext';
@@ -11,11 +12,11 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <p className="logo">
-      <GiTechnoHeart /><Link href="/">KeKar</Link> 
+      <GiTechnoHeart size={15}/><Link href="/">KeKar</Link> 
       </p>
 
       <button type="button" className="cart-icon" onClick={() => setShowCart(true)}>
-        <AiOutlineShopping />
+        <RiShoppingBag2Line /> 
         <span className="cart-item-qty">{totalQuantities}</span>
       </button>
 

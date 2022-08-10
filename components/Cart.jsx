@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import Link from 'next/link';
-import { AiOutlineMinus, AiOutlinePlus, AiOutlineLeft, AiOutlineShopping } from 'react-icons/ai';
+import { AiOutlineMinus, AiOutlinePlus, AiOutlineLeft } from 'react-icons/ai';
+
+import {RiShoppingBag2Line} from 'react-icons/ri';
 
 import { TiDeleteOutline } from 'react-icons/ti';
 import { RiPaypalLine } from 'react-icons/ri';
@@ -26,7 +28,7 @@ const Cart = () => {
 
         {cartItems.length < 1 && (
           <div className="empty-cart">
-            <AiOutlineShopping size={150} />
+            <RiShoppingBag2Line size={150} />
             <h3>Tu bolsa está vacía</h3>
             <Link href="/">
               <button
@@ -47,7 +49,7 @@ const Cart = () => {
               <div className="item-desc">
                 <div className="flex top">
                   <h5>{item.name}</h5>
-                  <h4>{item.price}<BsCurrencyEuro className="icon-refact"/></h4>
+                  <h4>{item.price}<BsCurrencyEuro size={15}/></h4>
                 </div>
                 <div className="flex bottom">
                   <div>
@@ -73,18 +75,18 @@ const Cart = () => {
           <div className="cart-bottom">
             <div className="total">
               <h3>Subtotal:</h3>
-              <h3>{totalPrice}<BsCurrencyEuro className="icon-refact"/></h3>
+              <h3>{totalPrice}<BsCurrencyEuro size={15}/></h3>
             </div>
             <div className="btn-container">
               <button type="button" className
               ="btn" onClick="">
-               <BsFillCreditCard2FrontFill className="icon-refact"/> Pagar con tarjeta
+               <BsFillCreditCard2FrontFill size={15}/> Pagar con tarjeta
               </button>
             </div>
             <div className="btn-container">
               <button type="button" className
               ="btn-grey" onClick="">
-                 <RiPaypalLine className="icon-refact"/> PayPal
+                 <RiPaypalLine size={15} className="paypal-item"/> PayPal
               </button>
             </div>
           </div>
