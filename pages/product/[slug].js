@@ -32,7 +32,7 @@ const ProductDetails = ({ product, products }) => {
                             <img
                             key={i}
                                 src={urlFor(item)}
-                                className={i == index ? 'small-image selected-image' : 'small-image'}
+                                className={i === index ? 'small-image selected-image' : 'small-image'}
                                 onMouseEnter={() => setIndex(i)
                                 }
                             />
@@ -61,7 +61,7 @@ const ProductDetails = ({ product, products }) => {
                         <h3>Cantidad:</h3>
                         <p className="quantity-desc">
                             <span className="minus" onClick={decQty}><AiOutlineMinus /></span>
-                            <span className="num" onClick="">{qty}</span>
+                            <span className="num">{qty}</span>
                             <span className="plus" onClick={incQty}><AiOutlinePlus /></span>
                         </p>
                     </div>

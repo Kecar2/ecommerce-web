@@ -1,6 +1,6 @@
 import Stripe from 'stripe';
 
-const stripe = new Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEYY);
+const stripe = new Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY);
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {
@@ -10,9 +10,10 @@ export default async function handler(req, res) {
                 submit_type: 'pay',
                 mode: 'payment',
                 payment_method_types: ['card'],
-                nilling_adress_collection: 'auto',
-                shipping_ooptions: [
-                    { shipping_rate: 'shr_1LVwtwH1GK1wAdkz8gM5hWpb'},
+                billing_address_collection: 'auto',
+                shipping_options: [
+                    { shipping_rate: 'shr_1LVw8fH1GK1wAdkzwGWxUIRj'},
+                    { shipping_rate: 'shr_1LVw6PH1GK1wAdkzZoGgLtJV'},
                 ],
                 line_items: req.body.map((item) => {
                     const img = item.image[0].asset._ref;
@@ -20,10 +21,10 @@ export default async function handler(req, res) {
 
                     return {
                         price_data: { 
-                            currency: 'EUR',
+                            currency: 'eur',
                             product_data: {
                                 name: item.name,
-                                image: [newImage],
+                                images: [newImage],
                             },
                             unit_amount: item.price * 100,
                         },
@@ -35,8 +36,8 @@ export default async function handler(req, res) {
                     }
                 }),
         
-                success_url: `${req.headers.origin}/?success=true`,
-                cancel_url: `${req.headers.origin}/?canceled=true`,
+                success_url: `${req.headers.origin}/success`,
+                cancel_url: `${req.headers.origin}/canceled`,
             }
 
             const session = await stripe.checkout.sessions.create(params);
@@ -49,4 +50,6 @@ export default async function handler(req, res) {
         res.setHeader('Allow', 'POST');
         res.status(405).end('Method Not Allowed');
     }
+
+    
 }
