@@ -17,6 +17,12 @@ ECOMMERCE - Construida con Next.js y Sanity para el Backend, React.js para el Fr
 * [![ReactIcons]][ReactIcons-url]
 
 
+### Por revisar
+
+- Bug del Boton [ Comprar Ahora ] del Head y Footer.
+- Version lanzada en Vercel bug despues de  procesar pago.
+- Añadir metodo de pago con PayPal
+- Mejorar version movil.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
