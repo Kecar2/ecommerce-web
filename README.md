@@ -2,6 +2,8 @@
 
 https://ecommerce-web-inky.vercel.app/
 
+![KeKar-Ecommerce](https://user-images.githubusercontent.com/99403056/185006415-7288a510-f8cb-40a8-b431-9a56f2a2da7c.gif)
+
 ## About The Project
 
 ECOMMERCE - Construida con Next.js y Sanity para el Backend, React.js para el Frontend y Stripe para metodos de pago.
