@@ -1,15 +1,18 @@
+## About The Project
+
+ECOMMERCE - Construida con Next.js y Sanity para el Backend, React.js para el Frontend y Stripe para metodos de pago.
 
 ### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
 * [![Sanity][Sanity.io]][Sanity-url]
 * [![Stripe][Stripe.com]][Stripe-url]
+* [![ReactIcons]][ReactIcons-url]
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
@@ -47,6 +50,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
@@ -55,5 +60,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 [React-url]: https://reactjs.org/
 [Sanity-url]: https://www.sanity.io/
 [Stripe-url]: https://stripe.com/es
-
-
+[ReactIcons-url]: https://react-icons.github.io/react-icons
